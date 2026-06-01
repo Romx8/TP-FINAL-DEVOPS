@@ -1,10 +1,16 @@
 name: CD starter
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 jobs:
   placeholder:
+    name: Placeholder CD job
     runs-on: ubuntu-latest
     steps:
-      - run: echo "A compléter pendant le TP: registry, tags, staging, production."
+      - name: Explain next work
+        run: |
+          echo "CD starter OK."
+          echo "A completer pendant le TP: registry, tags, staging, production."
